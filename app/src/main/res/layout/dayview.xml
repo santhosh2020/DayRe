@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dayview">
+
+    <TextView
+        android:id="@+id/date_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="18"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="90dp" />
+
+
+    <TextView
+        android:id="@+id/day_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_day"
+        android:layout_centerHorizontal="true"
+        android:text="July 2016"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btn_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/day_month"
+        android:background="@drawable/transparent_border"
+        android:text="12-1:30PM" />
+
+    <Button
+        android:id="@+id/btn_curnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/list_activities"
+        android:layout_alignLeft="@+id/date_day"
+        android:layout_alignStart="@+id/date_day"
+        android:textColor="#ffffff"
+        android:background="@drawable/transparent_border"
+        android:gravity="center"
+        android:text="1:30PM" />
+
+    <Button
+        android:id="@+id/btn_nxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/list_activities"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/transparent_border"
+        android:text="2PM" />
+
+    <ListView
+        android:id="@+id/list_activities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_prev"
+        android:layout_marginTop="46dp" />
+
+</RelativeLayout>
