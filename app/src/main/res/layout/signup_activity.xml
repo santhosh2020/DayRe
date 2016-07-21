@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/log_bg"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:paddingLeft="5dp"
+        android:text="New Account"
+        android:textColor="#99ffffff"
+        android:textSize="26dp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/temp_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edt_new_usrname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffff"
+            android:fadingEdgeLength="1dp"
+            android:hint="Name"
+            android:textColor="#ffff"
+            android:textColorHint="#99ffffff" />
+
+
+        <EditText
+            android:id="@+id/edt_new_usrpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffff"
+            android:fadingEdgeLength="1dp"
+            android:hint="Password"
+            android:textColor="#ffff"
+            android:textColorHint="#99ffffff"
+            android:layout_marginTop="20dp"/>
+
+
+        <EditText
+            android:id="@+id/edt_phno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffff"
+            android:fadingEdgeLength="1dp"
+            android:hint="Phone Number"
+            android:textColor="#ffff"
+            android:textColorHint="#99ffffff"
+            android:layout_marginTop="20dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_gravity="center"
+        android:background="@drawable/transparent_solid_blue"
+        android:text="Verify"
+        android:textColor="#ffff"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>

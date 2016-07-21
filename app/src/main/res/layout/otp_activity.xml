@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/log_bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Account"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textColor="#99ffffff"/>
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/temp_logo"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:layoutMode="opticalBounds">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_otp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:hint="Enter OTP"
+            android:backgroundTint="#ffff"
+            android:textColor="#ffff"
+            android:textColorHint="#99ffffff"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_resend"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:text="Resend"
+            android:textColor="#ffff" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/log_bg"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/temp_logo"
+        android:id="@+id/img_logo" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp"
+        android:text="DayRe"
+        android:textColor="#bdffffff"
+        android:textSize="25dp" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/edtxt_usrname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:backgroundTint="#ffff"
+            android:drawableLeft="@drawable/ic_perm_identity_white_18dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/deep_purple_100"
+            android:fadingEdgeLength="1dp"
+            android:hint="Username"
+            android:textColor="#ffff"
+            android:textColorHint="#99ffffff" />
+
+
+
+        <EditText
+            android:id="@+id/edtxt_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#ffff"
+            android:drawableLeft="@drawable/ic_lock_white_18dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@android:drawable/ic_menu_help"
+            android:hint="Password"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffff"
+            android:textColorHint="#99ffffff" />
+
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent_border_login"
+            android:text="Sign In"
+            android:textColor="#99ffffff" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_newreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="3dp"
+        android:layout_marginTop="50dp"
+        android:text="Not Registered Yet?"
+        android:textColor="#99ffffff"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+
+</LinearLayout>
