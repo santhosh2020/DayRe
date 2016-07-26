@@ -11,7 +11,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="18"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#ffffff"
         android:textSize="90dp" />
@@ -23,7 +22,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/date_day"
         android:layout_centerHorizontal="true"
-        android:text="July 2016"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#ffffff"
         android:textSize="30dp" />

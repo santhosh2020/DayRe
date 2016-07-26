@@ -26,6 +26,16 @@ public class Home extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         calendar=(CalendarView)findViewById(R.id.calendarView);
+        calendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+            @Override
+            public void onSelectedDayChange(CalendarView calendarView, int year, int month, int day) {
+                Intent to_dayview=new Intent(Home.this,DayView.class);
+                to_dayview.putExtra("month",month);
+                to_dayview.putExtra("day",day);
+                to_dayview.putExtra("yr",year);
+                startActivity(to_dayview);
+            }
+        });
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
