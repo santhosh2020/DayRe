@@ -1,28 +1,25 @@
 package com.example.macbook.dayre;
 
-
-import android.content.Intent;
-import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
+
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
-
+public class Summary extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -42,10 +39,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-
-
+        setContentView(R.layout.activity_summary);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -57,23 +51,25 @@ public class MainActivity extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(mViewPager);
 
-       /* FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+     /*   FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });*/
-
+        });
+*/
     }
 
 
-   /* @Override
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_summary, menu);
         return true;
     }
 
@@ -85,12 +81,12 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+       /* if (id == R.id.action_settings) {
             return true;
         }
-
+*/
         return super.onOptionsItemSelected(item);
-    }*/
+    }
 
     /**
      * A placeholder fragment containing a simple view.
@@ -120,28 +116,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-            Button start=(Button)rootView.findViewById(R.id.btn_start) ;
-            Button skip=(Button)rootView.findViewById(R.id.btn_skip) ;
-            RelativeLayout l1 = (RelativeLayout) rootView.findViewById(R.id.l1);
-            RelativeLayout l2 = (RelativeLayout) rootView.findViewById(R.id.l2);
-            RelativeLayout l3 = (RelativeLayout) rootView.findViewById(R.id.l3);
-            switch (getArguments().getInt(ARG_SECTION_NUMBER)) {
-                case 1:
-                    l1.setVisibility(View.VISIBLE);
-
-                    break;
-                case 2:
-                    l1.setVisibility(View.GONE);
-                    l2.setVisibility(View.VISIBLE);
-                    break;
-                case 3:
-                    l2.setVisibility(View.GONE);
-                    l3.setVisibility(View.VISIBLE);
-
-                    break;
-
-            }
+            View rootView = inflater.inflate(R.layout.fragment_summary, container, false);
+            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
+            //textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;
         }
     }
@@ -166,32 +143,18 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 2;
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "SECTION 1";
+                    return "Day";
                 case 1:
-                    return "SECTION 2";
-                case 2:
-                    return "SECTION 3";
+                    return "Month";
             }
             return null;
         }
     }
-public void start_go(View view){
-    Intent qq=new Intent(MainActivity.this,LoginActivity.class);
-    startActivity(qq);
-
 }
-    public void skip_go(View view){
-        Intent qq=new Intent(MainActivity.this,LoginActivity.class);
-        startActivity(qq);
-
-    }
-}
-
-
