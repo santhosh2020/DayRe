@@ -78,15 +78,18 @@ public class Home extends AppCompatActivity
 
         if (id == R.id.reminder) {
 
-            Intent i=new Intent(Home.this,DayView.class);
+            Intent i=new Intent(Home.this,Remainder.class);
             startActivity(i);
         } else if (id == R.id.summary) {
-            // Intent i=new Intent(Home.this,Summary.class);
+            Intent i=new Intent(Home.this,Summary.class);
+            startActivity(i);
 
         } else if (id == R.id.freq_places) {
-            // Intent i=new Intent(Home.this,FreqPlaces.class);
+             Intent i=new Intent(Home.this,Freqnt_Places.class);
+            startActivity(i);
         } else if (id == R.id.settings) {
-            // Intent i=new Intent(Home.this,Settings.class);
+            Intent i=new Intent(Home.this,Settings_DayRe.class);
+            startActivity(i);
         } else if (id == R.id.logout) {
             // Intent i=new Intent(Home.this,Login.class);
         } else if (id == R.id.about_us) {
