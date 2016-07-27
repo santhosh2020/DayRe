@@ -6,7 +6,28 @@
 
     <color name="black">#000000</color>
     <color name="white">#ffff</color>
-
+    <!--screen backgrounds-->
+    <color name="Intro_bg_screen1">#053367</color>
+    <color name="Intro_bg_screen2">#d884d1</color>
+    <color name="Intro_bg_screen3">#a803f5</color>
+    <!---inactive dot-->
+    <color name="Intro_dot_dark_screen1">#FF03162D</color>
+    <color name="Intro_dot_dark_screen2">#FF7C1874</color>
+    <color name="Intro_dot_dark_screen3">#FF3D0358</color>
+    <!--ACTIVE COLOR-->
+    <color name="Intro_dot_light_screen1">#FFD2DFED</color>
+    <color name="Intro_dot_light_screen2">#FFE1D6DF</color>
+    <color name="Intro_dot_light_screen3">#FFD9CBDF</color>
+    <array name="Intro_array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+    </array>
+    <array name="Intro_array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+    </array>
 
 
 
@@ -288,7 +309,28 @@
     <color name="blue_grey_700">#455a64</color>
     <color name="blue_grey_800">#37474f</color>
     <color name="blue_grey_900">#263238</color>
-
+    <!--screen backgrounds-->
+    <color name="bg_screen1">#053367</color>
+    <color name="bg_screen2">#d884d1</color>
+    <color name="bg_screen3">#a803f5</color>
+    <!---inactive dot-->
+    <color name="dot_dark_screen1">#FF03162D</color>
+    <color name="dot_dark_screen2">#FF7C1874</color>
+    <color name="dot_dark_screen3">#FF3D0358</color>
+    <!--ACTIVE COLOR-->
+    <color name="dot_light_screen1">#FFD2DFED</color>
+    <color name="dot_light_screen2">#FFE1D6DF</color>
+    <color name="dot_light_screen3">#FFD9CBDF</color>
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+    </array>
 
 
 </resources>

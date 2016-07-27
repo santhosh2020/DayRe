@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.macbook.dayre.Summary">
+    tools:context="com.example.macbook.dayre.Summary_DayRe">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
@@ -38,5 +38,6 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
+  
 
 </android.support.design.widget.CoordinatorLayout>

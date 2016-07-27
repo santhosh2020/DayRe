@@ -6,6 +6,19 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-    <string name="title_activity_summary">Summary</string>
-    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_welcome">Home screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">START</string>
+    <string name="slide_1_title">DayRe</string>
+    <string name="slide_1_sub">Day Reflector</string>
+    <string name="slide_1_desc">The Ultimate Personal Assistant App</string>
+
+    <string name="slide_2_title">Save Your Locations</string>
+    <string name="slide_2_desc">Track your Locations and Save your Daily works</string>
+
+    <string name="slide_3_title">Add Reminders</string>
+    <string name="slide_3_desc">Add Reminders from your locations</string>
+    <string name="title_activity_summary__day_re">Summary_DayRe</string>
+    <string name="section_format"> %1$d</string>
 </resources>
