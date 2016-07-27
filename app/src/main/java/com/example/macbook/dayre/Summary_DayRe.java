@@ -19,7 +19,7 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-public class Summary extends AppCompatActivity {
+public class Summary_DayRe extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -39,7 +39,7 @@ public class Summary extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_summary);
+        setContentView(R.layout.activity_summary__day_re);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -53,8 +53,8 @@ public class Summary extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
-
-     /*   FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+/*
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -62,14 +62,14 @@ public class Summary extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-*/
-    }
+
+  */  }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_summary, menu);
+        getMenuInflater().inflate(R.menu.menu_summary__day_re, menu);
         return true;
     }
 
@@ -81,10 +81,10 @@ public class Summary extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-       /* if (id == R.id.action_settings) {
+        if (id == R.id.action_settings) {
             return true;
         }
-*/
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -116,9 +116,9 @@ public class Summary extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_summary, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_summary__day_re, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            //textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;
         }
     }
@@ -153,6 +153,7 @@ public class Summary extends AppCompatActivity {
                     return "Day";
                 case 1:
                     return "Month";
+
             }
             return null;
         }

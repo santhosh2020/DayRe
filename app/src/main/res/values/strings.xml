@@ -19,4 +19,6 @@
 
     <string name="slide_3_title">Add Reminders</string>
     <string name="slide_3_desc">Add Reminders from your locations</string>
+    <string name="title_activity_summary__day_re">Summary_DayRe</string>
+    <string name="section_format"> %1$d</string>
 </resources>
