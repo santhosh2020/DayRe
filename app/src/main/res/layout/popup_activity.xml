@@ -83,7 +83,7 @@
           android:layout_height="wrap_content"
           android:id="@+id/add_rem"
           android:layout_gravity="center"
-          android:background="@drawable/ic_add_circle_white_18dp"/>
+          android:background="@android:drawable/ic_input_add"/>
 
 
     </LinearLayout>
