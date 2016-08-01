@@ -18,7 +18,8 @@
         <activity android:name=".Freqnt_Places" />
         <activity android:name=".Remainder" />
         <activity android:name=".Settings_DayRe" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".SignupActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
