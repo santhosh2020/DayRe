@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+
 public class Settings_DayRe extends AppCompatActivity {
     ListView lv;
     Integer[] icon={android.R.drawable.ic_menu_gallery};
