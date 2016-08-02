@@ -1,151 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.macbook.dayre.Settings_DayRe"
     android:orientation="vertical"
     android:background="@drawable/settings">
-    <TextView
+
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="General"
-        android:id="@+id/tv_general"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:layout_alignParentTop="true"
+        android:id="@+id/settings_list"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="44dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="40dp" />
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginLeft="80dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="            Theme"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            android:id="@+id/tv_theme"
-            android:background="#02ffffff"
-            android:drawableLeft="@android:drawable/ic_menu_edit"
-            android:layout_gravity="bottom" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="            Language"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            android:id="@+id/tv_language"
-            android:background="#02ffffff"
-            android:drawableLeft="@android:drawable/btn_star_big_on"
-            android:layout_below="@+id/tv_theme"
-            android:layout_alignLeft="@+id/tv_theme"
-            android:layout_alignStart="@+id/tv_theme"
-            android:layout_gravity="center_vertical" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="            Notification"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            android:id="@+id/tv_notifctn"
-            android:background="#02ffffff"
-            android:drawableLeft="@android:drawable/ic_menu_today"
-            android:layout_below="@+id/tv_language"
-            android:layout_alignLeft="@+id/tv_language"
-            android:layout_alignStart="@+id/tv_language" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="            Backup"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            android:id="@+id/tv_backup"
-            android:background="#02ffffff"
-            android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
-            android:layout_below="@+id/tv_notifctn"
-            android:layout_alignLeft="@+id/tv_notifctn"
-            android:layout_alignStart="@+id/tv_notifctn" />
-
-    </LinearLayout>
-    android:layout_alignEnd="@+id/tv_theme" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Social"
-        android:id="@+id/tv_Social"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:layout_marginLeft="44dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="40dp" />
-
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="80dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="            Widget"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            android:id="@+id/tv_widgt"
-            android:background="#02ffffff"
-            android:drawableLeft="@android:drawable/ic_dialog_dialer"
-            android:layout_below="@+id/tv_backup"
-            android:layout_alignRight="@+id/tv_theme"></TextView>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="            Like DayRe?Rate it!"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            android:id="@+id/tv_like"
-            android:background="#02ffffff"
-            android:drawableLeft="@android:drawable/star_big_on"
-            android:layout_below="@+id/tv_feedbck"
-            android:layout_alignLeft="@+id/tv_feedbck"
-            android:layout_alignStart="@+id/tv_feedbck" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="            Tell your Friends"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            android:id="@+id/tv_share"
-            android:background="#02ffffff"
-            android:drawableLeft="@android:drawable/ic_menu_share"
-            android:layout_below="@+id/tv_like"
-            android:layout_alignLeft="@+id/tv_like"
-            android:layout_alignStart="@+id/tv_like" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="            Like us on Facebook"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            android:id="@+id/tv_fblike"
-            android:background="#02ffffff"
-            android:drawableLeft="@android:drawable/stat_notify_more"
-            android:layout_below="@+id/tv_share"
-            android:layout_alignLeft="@+id/tv_share"
-            android:layout_alignStart="@+id/tv_share" />
-    </LinearLayout>
-
-</LinearLayout>
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

@@ -24,7 +24,7 @@ public class DayView extends AppCompatActivity {
     ListView listactivity;
     ArrayAdapter<String> adapter_current,adapter_prev,adapter_next,adapter;
     TextView date,day;
-    String m;
+    String month;
 
     @TargetApi(Build.VERSION_CODES.N)
     @Override
@@ -47,7 +47,7 @@ public class DayView extends AppCompatActivity {
         Intent get_date=getIntent();
         String year=Integer.toString(getIntent().getExtras().getInt("yr"));
         String get_day=Integer.toString(getIntent().getExtras().getInt("day"));
-        String month=Integer.toString(get_date.getExtras().getInt("month"));
+        month=get_date.getExtras().getString("month");
        /*if(month.equals(7))
         {
             date.setText("July " + year);
@@ -60,7 +60,7 @@ public class DayView extends AppCompatActivity {
             day.setText(get_day);
         }
        */
-        date.setText("July " + year);
+        date.setText(month +" " + year);
         day.setText(get_day);
         btn_current.setOnClickListener(new View.OnClickListener() {
             @Override

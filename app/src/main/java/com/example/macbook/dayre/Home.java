@@ -18,6 +18,8 @@ import android.widget.CalendarView;
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     CalendarView calendar;
+    Long date;
+    String m;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,14 +28,22 @@ public class Home extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         calendar=(CalendarView)findViewById(R.id.calendarView);
+        date=calendar.getDate();
         calendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(CalendarView calendarView, int year, int month, int day) {
-                Intent to_dayview=new Intent(Home.this,DayView.class);
-                to_dayview.putExtra("month",month);
-                to_dayview.putExtra("day",day);
-                to_dayview.putExtra("yr",year);
-                startActivity(to_dayview);
+                if(calendar.getDate()!=date) {
+                    Intent to_dayview = new Intent(Home.this, DayView.class);
+
+                    if(month==7)
+                    {
+                        m="July";
+                    }
+                    to_dayview.putExtra("month", m);
+                    to_dayview.putExtra("day", day);
+                    to_dayview.putExtra("yr", year);
+                    startActivity(to_dayview);
+                }
             }
         });
 
