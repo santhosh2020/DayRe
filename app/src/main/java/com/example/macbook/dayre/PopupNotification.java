@@ -1,4 +1,3 @@
-/*
 package com.example.macbook.dayre;
 
 import android.app.DatePickerDialog;
@@ -16,10 +15,9 @@ import android.widget.Toast;
 
 import java.util.Calendar;
 
-*/
 /**
- * Created by Shivichu Home on 7/21/2016.
- *//*
+ * Created by Shivichu Home on 7/21/2016.*/
+
 
 public class PopupNotification extends AppCompatActivity {
 
@@ -52,8 +50,6 @@ public class PopupNotification extends AppCompatActivity {
 
         rem_add = (Button) findViewById(R.id.add_rem);
 
-*/
-/*
 
         rem_add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -228,4 +224,3 @@ public class PopupNotification extends AppCompatActivity {
 
 }
 
-*/

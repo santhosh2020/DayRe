@@ -19,6 +19,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
+        android:id="@+id/temp_map"
         android:src="@drawable/temp_logo" />
 
     <LinearLayout
