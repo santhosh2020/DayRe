@@ -69,7 +69,7 @@ public class LoginActivity extends AppCompatActivity {
                 NotificationManager notificationManager = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
 
                 Notification mBuilder=new NotificationCompat.Builder(getApplication()).setSmallIcon(R.drawable.ic_announcement_white_24dp).setContentTitle("DayRe").setContentText("New Notification").build();
-               // mBuilder.contentIntent= PendingIntent.getActivity(getApplication(),0,new Intent(getApplicationContext(),PopupNotification.class),PendingIntent.FLAG_UPDATE_CURRENT);
+                mBuilder.contentIntent= PendingIntent.getActivity(getApplication(),0,new Intent(getApplicationContext(),PopupNotification.class),PendingIntent.FLAG_UPDATE_CURRENT);
 
 
                 notificationManager.notify(9999,mBuilder);

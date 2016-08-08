@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:id="@+id/custom_toast_layout_id"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="#002b52">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/imageView1"
+        android:src="@drawable/success"
+        android:layout_gravity="center_vertical">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/textView1"
+            android:textColor="#54a846"
+            android:textSize="20dp"
+            android:text="Reminder Added Successfully">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
