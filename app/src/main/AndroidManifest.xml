@@ -3,6 +3,10 @@
     package="com.example.macbook.dayre">
 
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,7 +17,7 @@
         <activity
             android:name=".Home"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".DayView" />
         <activity android:name=".Freqnt_Places" />
         <activity android:name=".Remainder" />
@@ -43,7 +47,16 @@
             android:name=".Summary_DayRe"
             android:label="@string/title_activity_summary__day_re"
             android:theme="@style/AppTheme.NoActionBar" />
-       
+
+        <receiver
+            android:name=".DayreReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.location.GPS_ENABLED_CHANGE" />
+                <action android:name="android.intent.action.PROVIDER_CHANGED"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

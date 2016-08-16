@@ -8,6 +8,11 @@
     android:fitsSystemWindows="true"
     tools:context="com.example.macbook.dayre.MainActivity">
 
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+
 
 
     <android.support.v4.view.ViewPager
@@ -16,4 +21,6 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
+</android.support.design.widget.AppBarLayout>
 </android.support.design.widget.CoordinatorLayout>
+

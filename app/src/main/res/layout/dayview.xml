@@ -1,64 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/dayview">
 
-    <TextView
-        android:id="@+id/date_day"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#ffffff"
-        android:textSize="90dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:textSize="35sp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <Button
+           android:id="@+id/btn_prev"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"
+           android:textColor="#ffffff"
+           android:background="@drawable/transparent_border"
+           android:layout_below="@+id/date"
+           android:text="12-1:30PM"
+          />
 
-    <TextView
-        android:id="@+id/day_month"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/date_day"
-        android:layout_centerHorizontal="true"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#ffffff"
-        android:textSize="30dp" />
+       <Button
+           android:id="@+id/btn_curnt"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_above="@+id/list_activities"
+           android:textColor="#ffffff"
+           android:layout_toRightOf="@+id/btn_prev"
+           android:layout_marginLeft="20dp"
+           android:background="@drawable/transparent_border"
+           android:gravity="center"
+           android:text="1:30PM" />
 
-    <Button
-        android:id="@+id/btn_prev"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textColor="#ffffff"
-        android:background="@drawable/transparent_border"
-        android:layout_below="@+id/day_month"
-        android:text="12-1:30PM" />
-
-    <Button
-        android:id="@+id/btn_curnt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/list_activities"
-        android:layout_alignLeft="@+id/date_day"
-        android:layout_alignStart="@+id/date_day"
-        android:textColor="#ffffff"
-        android:background="@drawable/transparent_border"
-        android:gravity="center"
-        android:text="1:30PM" />
-
-    <Button
-        android:id="@+id/btn_nxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#ffffff"
-        android:layout_above="@+id/list_activities"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:background="@drawable/transparent_border"
-        android:text="2PM" />
+       <Button
+           android:id="@+id/btn_nxt"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#ffffff"
+           android:layout_above="@+id/list_activities"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginLeft="20dp"
+           android:background="@drawable/transparent_border"
+           android:text="2PM" />
+   </LinearLayout>
 
     <ListView
         android:id="@+id/list_activities"
@@ -69,4 +71,4 @@
         android:layout_below="@+id/btn_prev"
         android:layout_marginTop="46dp" />
 
-</RelativeLayout>
+</LinearLayout>

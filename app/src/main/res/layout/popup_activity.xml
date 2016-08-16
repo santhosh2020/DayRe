@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hey, Hareesh"
+            android:text="Hey, User"
             android:textColor="#99ffffff"
             android:textSize="35dp"
             android:layout_marginTop="40dp"
@@ -26,11 +26,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/txt_pop_currentloc"
             android:textColor="#99ffffff"
             android:textSize="18dp"
             android:layout_marginLeft="35dp"
             android:layout_marginTop="15dp"
-            android:text="Now You Are at Bigleap,Calicut"/>
+            android:text=""/>
 
 
     </LinearLayout>
@@ -77,13 +78,20 @@
             android:text="Any Reminder?"
             android:textColor="#b1ffffff"
             android:layout_margin="@dimen/activity_horizontal_margin" />
-
-      <Button
+        Button
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:id="@+id/add_rem"
           android:layout_gravity="center"
-          android:background="@android:drawable/ic_input_add"/>
+          android:background="@drawable/ic_add_circle_white_18dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab_add_rem"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_add_circle_white_18dp_36"
+           />
 
 
     </LinearLayout>
